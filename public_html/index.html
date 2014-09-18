@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSRF Protection</title>
+</head>
+<body>
+  <form action="" method="get">
+    <div class="product">
+      <strong>A product</strong>
+      <div class="field">
+        <label for="quantity"></label>
+        Quantity: <input type="text" name="quantity" id="quantity">
+      </div>
+      <input type="hidden" name="product" value="1">
+      <input type="hidden" name="token" value="%s">
+      <input type="submit" value="Order">
+    </div>
+  </form>
+</body>
+</html>
